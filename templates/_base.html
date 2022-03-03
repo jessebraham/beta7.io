@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="{{ config.default_language }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="{{ config.extra.author }}" />
+    {% block seo %}
+    <meta name="description" content="{{ config.description }}" />
+    {% endblock %}
+
+    <title>{% block title %}{{ config.title }}{% endblock %}</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ get_url(path='img/favicon-32x32.png', trailing_slash=false) }}"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ get_url(path='img/favicon-16x16.png', trailing_slash=false) }}"
+      sizes="16x16"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ get_url(path='dist/main.css', trailing_slash=false) }}"
+    />
+
+    <link
+      rel="alternate"
+      href="{{ get_url(path='atom.xml', trailing_slash=false) }}"
+      type="application/atom+xml"
+      title="{{ config.title }} Atom Feed"
+    />
+
+    {% block styles %}{% endblock %}
+  </head>
+
+  <body>
+    <div class="flex flex-col justify-center min-h-full w-full">
+      <header class="container">
+        <a href="/" class="title">{{ config.title }}</a>
+      </header>
+
+      <main role="main">
+        <div class="container content">{% block content %}{% endblock %}</div>
+      </main>
+
+      <footer>
+        <div class="flex-col row">
+          <a
+            rel="license"
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            class="mb-2"
+          >
+            <img
+              src="{{ get_url(path='img/cc-by-sa.png', trailing_slash=false) }}"
+              alt="Creative Commons License"
+            />
+          </a>
+          This work is licensed under a
+          <a
+            rel="license"
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            >Creative Commons Attribution-ShareAlike 4.0 International
+            License</a
+          >
+        </div>
+
+        <div class="row">
+          <p class="mr-2">
+            Created by <span class="text-white">Jesse Braham</span> in Canada
+          </p>
+          {{ load_data(path='img/maple_leaf.svg')|safe }}
+        </div>
+
+        <div class="row">
+          <a href="mailto:{{ config.extra.email }}" title="Contact via email">
+            {{ load_data(path='img/email.svg')|safe }}
+          </a>
+          <a
+            href="https://github.com/{{ config.extra.github }}"
+            title="View GitHub profile"
+          >
+            {{ load_data(path='img/github.svg')|safe }}
+          </a>
+          <a
+            href="{{ get_url(path='atom.xml', trailing_slash=false) }}"
+            rel="alternate"
+            type="application/atom+xml"
+            title="Atom feed"
+          >
+            {{ load_data(path='img/atom.svg')|safe }}
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

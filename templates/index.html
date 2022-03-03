@@ -1,0 +1,15 @@
+{% extends "_base.html" %}
+
+
+{% block content %}
+{% set section = get_section(path="posts/_index.md") %}
+
+{% for post in section.pages %}
+<article class="article-preview">
+  <a href="{{ post.permalink }}">{{ post.title }}</a>
+  <h2 class="subtitle">{{ post.date }}</h2>
+  <p>{{ post.description }}</p>
+</article>
+{% endfor %}
+
+{% endblock %}

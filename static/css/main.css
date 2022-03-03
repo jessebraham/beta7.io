@@ -1,0 +1,167 @@
+/* Import all of Tailwind CSS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General layout & theming */
+
+html,
+body {
+  @apply bg-gray-900 h-full text-gray-400;
+}
+
+header,
+.content,
+footer {
+  @apply px-6;
+}
+
+main {
+  @apply flex-1 py-10;
+}
+
+@media (min-width: 768px) {
+  main {
+    @apply py-20;
+  }
+}
+
+/* Header */
+
+header {
+  @apply flex items-center justify-between py-6;
+}
+
+header .title {
+  @apply font-bold text-white text-3xl tracking-widest uppercase;
+}
+
+header nav a {
+  @apply text-gray-400 tracking-wide uppercase;
+}
+
+header nav a:active,
+header nav a:hover,
+header nav a:active {
+  @apply text-white;
+}
+
+header nav a:not(:first-of-type) {
+  @apply ml-6;
+}
+
+/* Footer */
+
+footer {
+  @apply border-gray-800 border-t flex flex-col items-center justify-center py-12 text-gray-400;
+}
+
+footer .row {
+  @apply flex items-center text-center;
+}
+
+footer .row:not(:last-of-type) {
+  @apply mb-8;
+}
+
+footer .row a:active,
+footer .row a:hover {
+  @apply text-white;
+}
+
+footer .row a:not(:first-child) {
+  @apply ml-4;
+}
+
+footer .row svg {
+  @apply h-5;
+}
+
+/* Articles */
+
+article:not(:first-of-type) {
+  @apply mt-8;
+}
+
+article.article-preview a {
+  @apply font-light text-white text-xl uppercase;
+}
+
+article.article-preview a:active,
+article.article-preview a:hover {
+  @apply text-gray-300;
+}
+
+article.article-preview p {
+  @apply mt-4;
+}
+
+article h1 {
+  @apply font-light text-white text-xl uppercase;
+}
+
+article h2 {
+  @apply text-red-600 text-sm;
+}
+
+article.page > p {
+  @apply mt-3;
+}
+
+@media (min-width: 768px) {
+  article:not(:first-of-type) {
+    @apply mt-16;
+  }
+}
+
+/* Article content */
+
+.article-content a {
+  @apply text-white;
+}
+
+.article-content a:active,
+.article-content a:hover {
+  @apply text-gray-300;
+}
+
+.article-content blockquote,
+.article-content > ul {
+  @apply p-3;
+}
+
+.article-content p,
+.article-content table,
+.article-content > ul {
+  @apply my-4;
+}
+
+.article-content h1 {
+  @apply mt-8 text-lg;
+}
+
+.article-content h2 {
+  @apply font-light mt-8 text-base text-white uppercase;
+}
+
+.article-content h3 {
+  @apply mt-2 text-sm text-white uppercase;
+}
+
+.article-content table th {
+  @apply uppercase;
+}
+
+.article-content table th,
+.article-content table td {
+  @apply px-2 px-1;
+}
+
+.article-content pre {
+  @apply my-6 overflow-x-auto p-3 text-sm;
+}
+
+.page .article-content h1 + h2 {
+  @apply m-0 text-red-600 text-xs;
+}
