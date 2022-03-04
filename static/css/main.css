@@ -21,6 +21,32 @@ main {
   @apply flex-1 py-10;
 }
 
+.content > h1,
+.content > h2 {
+  @apply font-light mb-8 text-white uppercase;
+}
+
+.content > h1 {
+  @apply text-2xl;
+}
+
+.content > h2 {
+  @apply mb-4 mt-8 text-xl;
+}
+
+.content > p {
+  @apply mb-4 text-lg;
+}
+
+.content > p a {
+  @apply text-white;
+}
+
+.content > p a:active,
+.content > p a:hover {
+  @apply text-gray-300;
+}
+
 @media (min-width: 768px) {
   main {
     @apply py-20;
@@ -42,13 +68,12 @@ header nav a {
 }
 
 header nav a:active,
-header nav a:hover,
-header nav a:active {
+header nav a:hover {
   @apply text-white;
 }
 
 header nav a:not(:first-of-type) {
-  @apply ml-6;
+  @apply ml-8;
 }
 
 /* Footer */
@@ -98,15 +123,19 @@ article.article-preview p {
 }
 
 article h1 {
-  @apply font-light text-white text-xl uppercase;
+  @apply font-light text-white text-2xl uppercase;
 }
 
 article h2 {
-  @apply text-red-600 text-sm;
+  @apply text-red-600;
+}
+
+article h3 {
+  @apply text-white uppercase;
 }
 
 article.page > p {
-  @apply mt-3;
+  @apply mt-4;
 }
 
 @media (min-width: 768px) {
@@ -116,6 +145,10 @@ article.page > p {
 }
 
 /* Article content */
+
+.article-content {
+  @apply mt-8;
+}
 
 .article-content a {
   @apply text-white;
@@ -138,15 +171,15 @@ article.page > p {
 }
 
 .article-content h1 {
-  @apply mt-8 text-lg;
+  @apply mt-8 text-xl tracking-wide;
 }
 
 .article-content h2 {
-  @apply font-light mt-8 text-base text-white uppercase;
+  @apply font-light mt-12 text-lg text-white tracking-wide uppercase;
 }
 
 .article-content h3 {
-  @apply mt-2 text-sm text-white uppercase;
+  @apply mt-8 text-base text-white tracking-wide uppercase;
 }
 
 .article-content table th {
@@ -158,8 +191,21 @@ article.page > p {
   @apply px-2 px-1;
 }
 
+.article-content li code,
+.article-content p code {
+  @apply px-px text-red-600;
+}
+
 .article-content pre {
   @apply my-6 overflow-x-auto p-3 text-sm;
+}
+
+.article-content ul li {
+  @apply list-disc ml-4 pl-1 py-1;
+}
+
+.article-content ul ul {
+  @apply my-1;
 }
 
 .page .article-content h1 + h2 {

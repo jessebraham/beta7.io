@@ -1,7 +1,7 @@
 base_url = "https://beta7.io"
 
 title       = "Beta7"
-description = ""
+description = "The personal blog of Jesse Braham"
 
 default_language = "en"
 
