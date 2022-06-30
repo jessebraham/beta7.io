@@ -5,7 +5,7 @@
 Ensure that Zola has been installed prior to building. See the [documentation] for installation instructions.
 
 ```bash
-$ ./scripts/css-setup.sh
+$ ./scripts/setup.sh
 $ ./scripts/css-build.sh
 $ zola serve
 ```

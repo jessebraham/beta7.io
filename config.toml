@@ -18,6 +18,7 @@ highlight_theme = "one-dark"
 render_emoji    = true
 
 [extra]
-author = "Jesse Braham"
-email  = "jesse@beta7.io"
-github = "jessebraham"
+author  = "Jesse Braham"
+email   = "jesse@beta7.io"
+github  = "jessebraham"
+twitter = "notjessebraham"
