@@ -60,7 +60,7 @@ While it's often advisable to avoid allocations in such limited environments, th
 
 # esp-println
 
-[esp-println](https://github.com/esp-rs/esp-println) allows for printing over UART, USB Serial JTAG, or RTT without any required dependencies. This uses the ROM functions directlym rather than having to depend on a PAC and/or HAL for this functionality. The communication method to use can be selected using their respective features. This crate also provides `print!()` and `println!()` implementations which can be used as you normally would.
+[esp-println](https://github.com/esp-rs/esp-println) allows for printing over UART, USB Serial JTAG, or RTT without any required dependencies. This uses the ROM functions directly, rather than having to depend on a PAC and/or HAL for this functionality. The communication method to use can be selected using their respective features. This crate also provides `print!()` and `println!()` implementations which can be used as you normally would.
 
 This crate is useful for building packages which need this functionality but do not want to pull in larger dependencies. A good example of this is [esp-backtrace](https://github.com/esp-rs/esp-backtrace).
 
