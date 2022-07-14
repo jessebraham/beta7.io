@@ -4,6 +4,16 @@
 {% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
 
+{% block seo %}
+    <meta name="description" content="{{ config.description }}" />
+    <link rel="canonical" href="{{ page.permalink|safe }}" />
+
+    <meta property="og:title" content="{{ page.title }} | {{ config.title }}" />
+    <meta property="og:description" content="{{ config.description }}" />
+    <meta property="og:url" content="{{ page.permalink|safe }}" />
+{% endblock %}
+
+
 {% block content %}
 
 <h1>{{ page.title }}</h1>

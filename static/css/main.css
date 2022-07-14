@@ -164,6 +164,18 @@ article.page > p {
   @apply p-3;
 }
 
+.article-content blockquote {
+  @apply border-l-4 border-red-600;
+}
+
+.article-content .series {
+  @apply my-8;
+}
+
+.article-content .series blockquote p {
+  @apply mt-0;
+}
+
 .article-content p,
 .article-content table,
 .article-content > ul {
@@ -193,7 +205,7 @@ article.page > p {
 
 .article-content li code,
 .article-content p code {
-  @apply px-px text-red-600;
+  @apply px-px text-red-600 text-sm;
 }
 
 .article-content pre {
