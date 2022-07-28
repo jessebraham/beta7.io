@@ -1,6 +1,9 @@
 +++
 title = "About"
 date  = "1970-01-01"
+
+[extra]
+show_title = true
 +++
 
 My name is Jesse Braham, and I am a software developer currently residing in Vancouver, BC, Canada.

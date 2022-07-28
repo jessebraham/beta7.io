@@ -47,6 +47,23 @@ main {
   @apply text-gray-300;
 }
 
+.content a {
+  @apply text-white;
+}
+
+.content a:active,
+.content a:hover {
+  @apply text-gray-300;
+}
+
+.content > ul {
+  @apply my-4 p-3;
+}
+
+.content > ul li {
+  @apply list-disc ml-4 pl-1 py-1;
+}
+
 @media (min-width: 768px) {
   main {
     @apply py-20;
