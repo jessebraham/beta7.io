@@ -16,7 +16,6 @@ I am proficient in Rust, Python, JavaScript, C#, Racket, C, and some others. I h
 
 I have a multitude of interests, which include (but are not limited to) hardware design/embedded development, languages (both programming and human), systems programming (compilers, operating systems, etc.), automation & tooling, engineering & manufacturing, and physical simulations. Outside of tech I love comic books, music, astronomy & physics, and being outdoors.
 
-
 ## Contact me
 
 If you would like to contact me feel free to send an email to [jesse@beta7.io](mailto:jesse@beta7.io), or send a message on Matrix to <span class="text-white">@jessebraham:matrix.org</span>.

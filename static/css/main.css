@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply bg-gray-900 h-full text-gray-400;
+  @apply bg-gray-800 h-full text-gray-300;
 }
 
 header,
@@ -44,7 +44,7 @@ main {
 
 .content > p a:active,
 .content > p a:hover {
-  @apply text-gray-300;
+  @apply text-gray-200;
 }
 
 .content a {
@@ -53,7 +53,7 @@ main {
 
 .content a:active,
 .content a:hover {
-  @apply text-gray-300;
+  @apply text-gray-200;
 }
 
 .content > ul {
@@ -73,15 +73,15 @@ main {
 /* Header */
 
 header {
-  @apply flex items-center justify-between py-6;
+  @apply flex items-center justify-between py-8;
 }
 
 header .title {
-  @apply font-bold text-white text-3xl tracking-widest uppercase;
+  @apply font-bold text-white text-4xl tracking-widest uppercase;
 }
 
 header nav a {
-  @apply text-gray-400 tracking-wide uppercase;
+  @apply font-light text-gray-300 text-xl tracking-wide uppercase;
 }
 
 header nav a:active,
@@ -96,7 +96,7 @@ header nav a:not(:first-of-type) {
 /* Footer */
 
 footer {
-  @apply border-gray-800 border-t flex flex-col items-center justify-center py-12 text-gray-400;
+  @apply border-gray-800 border-t flex flex-col items-center justify-center py-16 text-gray-300;
 }
 
 footer .row {
@@ -117,26 +117,26 @@ footer .row a:not(:first-child) {
 }
 
 footer .row svg {
-  @apply h-5;
+  @apply h-6;
 }
 
 /* Articles */
 
 article:not(:first-of-type) {
-  @apply mt-8;
+  @apply mt-10;
 }
 
 article.article-preview a {
-  @apply font-light text-white text-xl uppercase;
+  @apply font-light text-white text-2xl uppercase;
 }
 
 article.article-preview a:active,
 article.article-preview a:hover {
-  @apply text-gray-300;
+  @apply text-gray-200;
 }
 
 article.article-preview p {
-  @apply mt-4;
+  @apply mt-6 text-lg;
 }
 
 article h1 {
@@ -144,7 +144,7 @@ article h1 {
 }
 
 article h2 {
-  @apply text-red-600;
+  @apply text-red-600 mb-2;
 }
 
 article h3 {
@@ -164,7 +164,7 @@ article.page > p {
 /* Article content */
 
 .article-content {
-  @apply mt-8;
+  @apply mt-8 text-lg;
 }
 
 .article-content a {
@@ -173,7 +173,7 @@ article.page > p {
 
 .article-content a:active,
 .article-content a:hover {
-  @apply text-gray-300;
+  @apply text-gray-200;
 }
 
 .article-content blockquote,
@@ -196,19 +196,19 @@ article.page > p {
 .article-content p,
 .article-content table,
 .article-content > ul {
-  @apply my-4;
+  @apply my-6;
 }
 
 .article-content h1 {
-  @apply mt-8 text-xl tracking-wide;
+  @apply mt-8 text-2xl tracking-wide;
 }
 
 .article-content h2 {
-  @apply font-light mt-12 text-lg text-white tracking-wide uppercase;
+  @apply font-light mt-16 text-xl text-white tracking-wide uppercase;
 }
 
 .article-content h3 {
-  @apply mt-8 text-base text-white tracking-wide uppercase;
+  @apply mt-12 text-base text-lg text-white tracking-wide uppercase;
 }
 
 .article-content table th {
@@ -222,11 +222,11 @@ article.page > p {
 
 .article-content li code,
 .article-content p code {
-  @apply px-px text-red-600 text-sm;
+  @apply px-px text-red-600;
 }
 
 .article-content pre {
-  @apply my-6 overflow-x-auto p-3 text-sm;
+  @apply my-6 overflow-x-auto p-3;
 }
 
 .article-content ul li {
