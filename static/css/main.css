@@ -168,12 +168,12 @@ article.page > p {
 }
 
 .article-content a {
-  @apply text-white;
+  @apply text-red-600;
 }
 
 .article-content a:active,
 .article-content a:hover {
-  @apply text-gray-200;
+  @apply text-red-600 underline;
 }
 
 .article-content blockquote,
@@ -226,7 +226,7 @@ article.page > p {
 }
 
 .article-content pre {
-  @apply my-6 overflow-x-auto p-3;
+  @apply my-6 overflow-x-auto p-3 text-sm;
 }
 
 .article-content ul li {
